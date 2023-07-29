@@ -21,7 +21,7 @@
   margin: 0;
 }
 
-input[type="email"]:focus {
+input[type="email"]:focus{
   outline: none;
 }
 
@@ -131,7 +131,7 @@ body {
   color: var(--tomato);
 }
 
-.error-state{
+.error-status{
   border-color: var(--tomato);
   background-color: var(--error-color);
   color: var(--tomato);
