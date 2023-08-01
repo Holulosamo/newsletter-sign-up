@@ -55,6 +55,8 @@ body {
   flex-direction: inherit;
   gap: 30px;
   background-color: var(--white);
+  padding-bottom: 6.5em;
+
 }
 
 .main__title {
@@ -88,12 +90,6 @@ body {
 .main__list-items::before{
   content: url(../assets/images/icon-list.svg);
   margin: 0;
-}
-
-.main__form{
-  margin-top: .8em;
-  margin-bottom: 6em;
-
 }
 
 .main__form-container{
@@ -155,6 +151,6 @@ body {
   }
 
   .main__form{
-    margin-bottom: 8.5em;
+      padding-bottom: 2.5em;
   }
 }

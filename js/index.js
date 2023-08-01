@@ -24,7 +24,7 @@ const handleValidation = () => {
 const handleSubmit = (e) => {
     e.preventDefault();
     if(handleValidation()){
-        // window.location.href = "https://youtube.com"
+        window.location.href = "../pages/success.html";
     }
 }
 
