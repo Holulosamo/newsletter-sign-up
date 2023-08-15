@@ -18,11 +18,20 @@
             <h1 class="main__content-title">Thanks for subscribing!</h1>
             <p class="main__content-text">  A confirmation email has been sent to 
             <b>ash@loremcompany.com</b>
-            Please open it and click the button inside to confirm your subscription.
+            Please open it and click the button inside to confirm your subscription
             </p>
             </article>
             <div class="main__container"><button class="main__form-submit">Dismiss message</button></div>
         </section>
     </main>
+
+    <script>
+        const d = document;
+        const btn = d.querySelector('.main__form-submit');
+
+        btn.addEventListener('click', () => {
+            window.location.href = "../index.html";
+        });
+    </script>
 </body>
 </html>

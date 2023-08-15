@@ -69,8 +69,8 @@ body {
 }
 
 .main__content {
-  display: inherit;
-  flex-direction: inherit;
+  display: flex;
+  flex-direction: column;
   gap: 2em;
   margin: 0 23.2px;
 }
@@ -120,6 +120,7 @@ body {
   height: 60px;
   font-size: 1em;
   border-radius: .5em;
+  border: none;
 }
 
 .error-message{
@@ -153,4 +154,56 @@ body {
   .main__form{
       padding-bottom: 2.5em;
   }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+      position: relative;
+      height: 100vh;
+    }
+
+    .main{
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "a b"
+        ;
+      padding: 1.5em 0;
+      border-radius: 30px;
+    }
+
+    .main__image{
+      grid-area: b;
+      padding-right: 1.5em;
+    }
+
+    .main__content{
+      grid-area: a;
+      align-self: center;
+      margin: unset;
+      padding-left: 4.5em;
+    }
+
+    .main__title{
+      font-size: 3.5em;
+    }
+
+    .main__article-p{
+      inline-size: 80%;
+    }
+
+    .attribution{
+      position: absolute;
+      bottom: 0;
+    }
+
+    .main__form-email, .main__form-submit, .main__form-container{
+      width: 90%;
+    }
+
+    .main__form-submit:hover{
+        background: linear-gradient(125deg, #FF5474, #FF6740);
+        box-shadow: 0 5px 20px rgba(34, 33, 33, 0.527);
+        cursor: pointer;
+    }
 }
